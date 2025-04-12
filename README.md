@@ -25,13 +25,6 @@ This portfolio website showcases my projects, skills, and experience as a web de
 - **Icons**: [Lucide React](https://lucide.dev/)
 - **Hosting**: [Vercel](https://vercel.com/)
 
-## Projects Featured
-
-1. **Groots Design Site** - Custom React site for an Interior Design company
-2. **Remembr Site** - Social media platform focused on memorializing loved ones
-3. **PebblyPal** - iOS app for calorie counting and weight tracking
-4. **Farming The Apocalypse** - Pixel art PC game with post-apocalyptic farming theme
-
 ## Getting Started
 
 ### Prerequisites
@@ -77,19 +70,12 @@ npm run dev
 
 ## Deployment
 
-This portfolio is deployed on Vercel. For your own deployment:
+This portfolio is deployed on Vercel. 
 
-1. Push your repository to GitHub
-2. Connect your repository to Vercel
-3. Vercel will automatically build and deploy your site
 
 ## Contact
 
-Feel free to reach out to me if you have any questions or would like to collaborate on a project:
-
-- GitHub: [github.com/your-username](https://github.com/your-username)
-- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-- Email: your.email@example.com
+Feel free to reach out to me if you have any questions or would like to collaborate on a project!
 
 ## License
 
@@ -97,4 +83,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-⭐️ From [Your Name]
+⭐️ From Sven Groot
