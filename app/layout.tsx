@@ -6,11 +6,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata = {
-  title: "Sven Groot | Full-Stack Developer & UI/UX Designer",
-  description: "Portfolio of Sven Groot, a full-stack developer and UI/UX designer",
-    generator: 'v0.dev'
-}
+
 
 export default function RootLayout({
   children,
