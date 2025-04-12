@@ -79,7 +79,11 @@ Feel free to reach out to me if you have any questions or would like to collabor
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+## License
+
+© [Sven Groot], All Rights Reserved.
+
+This project is proprietary and protected by copyright law. The source code is available for viewing and reference purposes only. Unauthorized copying, modification, distribution, or use of this code for commercial or personal projects is strictly prohibited without explicit written permission from the copyright holder.
 
 ---
 
