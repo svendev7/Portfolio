@@ -23,7 +23,7 @@ export default function ContactSection() {
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Like What You See?</h2>
           <p className="text-lg text-foreground/70 mb-12 max-w-2xl mx-auto">
-            I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
+            I'm always open to discussing new projects, creative ideas or opportunities.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -74,20 +74,20 @@ function ContactInfo() {
     {
       name: "GitHub",
       icon: <Github className="w-5 h-5" />,
-      url: "https://github.com/svenwritescode",
+      url: "https://github.com/svendev7",
       username: "@svenwritescode",
     },
     {
       name: "LinkedIn",
       icon: <Linkedin className="w-5 h-5" />,
-      url: "https://linkedin.com/in/svenwritescode",
+      url: "https://www.linkedin.com/in/sven-groot-85b7582bb/",
       username: "Sven Groot",
     },
     {
       name: "Email",
       icon: <Mail className="w-5 h-5" />,
-      url: "mailto:hello@svenwritescode.com",
-      username: "hello@svenwritescode.com",
+      url: "mailto:svengroot88@gmail.com",
+      username: "svengroot88@gmail.com",
     },
   ]
 
@@ -123,10 +123,9 @@ function ContactInfo() {
       </div>
 
       <div className="mt-8 p-6 rounded-lg bg-purple-500/10 border border-purple-500/20">
-        <h4 className="font-medium mb-2">Available for Freelance</h4>
+        <h4 className="font-medium mb-2">Available for Hire</h4>
         <p className="text-sm text-foreground/70">
-          I'm currently available for freelance work. If you have a project that needs some creative direction, I'd love
-          to hear about it.
+          I'm currently available for work. If you have a job or project in mind or just want to chat, feel free to reach out!
         </p>
       </div>
     </motion.div>
