@@ -10,54 +10,45 @@ import { ExternalLink, Github } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Dashboard",
-    description:
-      "A comprehensive dashboard for e-commerce businesses with real-time analytics, inventory management, and customer insights.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 2,
-    title: "Health & Fitness App",
-    description:
-      "A mobile-first application for tracking workouts, nutrition, and health metrics with personalized recommendations.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["React Native", "Firebase", "Redux", "UI/UX Design"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 3,
-    title: "Smart Home Control System",
-    description:
-      "An IoT platform for controlling and automating home devices with an intuitive interface and powerful scheduling features.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Vue.js", "Express", "WebSockets", "MQTT"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 4,
-    title: "Smart Home Control System",
-    description:
-      "An IoT platform for controlling and automating home devices with an intuitive interface and powerful scheduling features.",
-    image: "/placeholder.svg?height=600&width=800",
-    tags: ["Vue.js", "Express", "WebSockets", "MQTT"],
-    liveLink: "#",
-    githubLink: "#",
-  },
-  {
-    id: 5,
     title: "Groots Design Site",
     description:
       "A custom React site commisioned for GrootsDesign an Interior Design company, with a focus on showcasing their work and services.",
     image: "/grootsdesign.png?height=600&width=800",
-    tags: ["React", "Next.js", "Typescript"],
+    tags: ["React", "Next.js", "Typescript", "Framer Motion"],
     liveLink: "https://www.grootsdesign.com",
-    githubLink: "#",
+    githubLink: "https://github.com/svendev7/GrootsDesignWebsite",
   },
+  {
+    id: 2,
+    title: "Remembr Site",
+    description:
+      "A social media platform where people share about deceased loved ones and can arrange memorial dates or send condoleances, this project was a team project commisioned by the owner to the Hogeschool Utrecht and chosen by our team to work on, we were to update the existing design (Which was ~15 years old)",
+    image: "/remembr.png?height=600&width=800",
+    tags: ["React", "Next.js", "Typescript", "Prisma", "TailwindCSS", "Clerk", "Docker", "Framer Motion"],
+    liveLink: "https://remembr-front-end.vercel.app",
+    githubLink: "https://github.com/Remembr-Dev/remembr-front-end.git",
+  },
+  {
+    id: 3,
+    title: "PebblyPal",
+    description:
+      "An IOS app for counting calories and tracking meals and weight, a project im currently still developing",
+    image: "/pEbbly.png?height=600&width=800",
+    tags: ["React Native", "Expo", "XCode", "Unity", "Typescript", "Firebase"],
+    liveLink: "https://github.com/svendev7/CuteCalorieTrackingApp.git",
+    githubLink: "https://github.com/svendev7/CuteCalorieTrackingApp.git",
+  },
+  {
+    id: 4,
+    title: "Farming The Apocalypse",
+    description:
+      "A pixel art pc game im developing in my free time, its a similar-ish game to stardew valley, but with a focus on farming and building in a post apocalyptic world where your main focus lies in base defence, this is a large project and won't be done in the near future.",
+    image: "/placeholder.svg?height=600&width=800",
+    tags: ["Unity", "C#", "Photoshop (for the pixel art)", "Steam"],
+    liveLink: "https://github.com/svendev7/FarmingTheApocalypse.git",
+    githubLink: "https://github.com/svendev7/FarmingTheApocalypse.git",
+  },
+  
 ]
 
 export default function ProjectsSection() {
