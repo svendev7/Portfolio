@@ -1,6 +1,6 @@
 # Portfolio 
 
-![Portfolio Preview](public/preview.png)
+![Portfolio Preview](public/Preview.JPG)
 
 ## Overview
 
