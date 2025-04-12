@@ -22,7 +22,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-2 text-sm text-foreground/60 max-w-md">
-              Full-stack developer and UI/UX designer creating beautiful, functional, and user-centered digital
+              Full-stack developer and Web Designer creating beautiful, functional, and user-centered digital
               experiences.
             </p>
           </div>
