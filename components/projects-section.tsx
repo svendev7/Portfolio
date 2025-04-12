@@ -43,7 +43,7 @@ const projects = [
     title: "Farming The Apocalypse",
     description:
       "A pixel art pc game im developing in my free time, its a similar-ish game to stardew valley, but with a focus on farming and building in a post apocalyptic world where your main focus lies in base defence, this is a large project and won't be done in the near future.",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/FTA.JPG?height=600&width=800",
     tags: ["Unity", "C#", "Photoshop (for the pixel art)", "Steam"],
     liveLink: "https://github.com/svendev7/FarmingTheApocalypse.git",
     githubLink: "https://github.com/svendev7/FarmingTheApocalypse.git",
@@ -117,26 +117,28 @@ function ProjectCard({
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.3 }}
         >
-          {project.title === "Farming The Apocalypse" ? (
+      
+          <Image
+            src={project.image || "/placeholder.svg"}
+            alt={project.title}
+            width={800}
+            height={600}
+            className="w-full h-auto"
+          />
+
+          {project.title === "Farming The Apocalypse" && (
             <video 
               autoPlay
               muted
               loop
-              className="w-full h-auto"
-              style={{ width: 800, height: 600 }}
+              playsInline
+              className="absolute inset-0 w-full h-full object-cover"
             >
               <source src="/FTA.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-          ) : (
-            <Image
-              src={project.image || "/placeholder.svg"}
-              alt={project.title}
-              width={800}
-              height={600}
-              className="w-full h-auto"
-            />
           )}
+
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
             <div className="p-6 w-full">
               <div className="flex flex-wrap gap-2 mb-4">
