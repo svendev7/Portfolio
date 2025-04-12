@@ -1,6 +1,6 @@
-# Personal Portfolio Website
+# Portfolio 
 
-![Portfolio Preview](public/grootsdesign.png)
+![Portfolio Preview](public/preview.png)
 
 ## Overview
 
