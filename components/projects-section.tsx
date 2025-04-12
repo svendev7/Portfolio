@@ -10,16 +10,6 @@ import { ExternalLink, Github } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Groots Design Site",
-    description:
-      "A custom React site commisioned for GrootsDesign an Interior Design company, with a focus on showcasing their work and services.",
-    image: "/grootsdesign.png?height=600&width=800",
-    tags: ["React", "Next.js", "Typescript", "Framer Motion"],
-    liveLink: "https://www.grootsdesign.com",
-    githubLink: "https://github.com/svendev7/GrootsDesignWebsite",
-  },
-  {
-    id: 2,
     title: "Remembr Site",
     description:
       "A social media platform where people share about deceased loved ones and can arrange memorial dates or send condoleances, this project was a team project commisioned by the owner to the Hogeschool Utrecht and chosen by our team to work on, we were to update the existing design (Which was ~15 years old)",
@@ -27,6 +17,16 @@ const projects = [
     tags: ["React", "Next.js", "Typescript", "Prisma", "TailwindCSS", "Clerk", "Docker", "Framer Motion"],
     liveLink: "https://remembr-front-end.vercel.app",
     githubLink: "https://github.com/Remembr-Dev/remembr-front-end.git",
+  },
+  {
+    id: 2,
+    title: "Groots Design Site",
+    description:
+      "A custom React site commisioned for GrootsDesign an Interior Design company, with a focus on showcasing their work and services.",
+    image: "/grootsdesign.png?height=600&width=800",
+    tags: ["React", "Next.js", "Typescript", "Framer Motion"],
+    liveLink: "https://www.grootsdesign.com",
+    githubLink: "https://github.com/svendev7/GrootsDesignWebsite",
   },
   {
     id: 3,
@@ -100,7 +100,7 @@ function ProjectCard({
   const isInView = useInView(ref, { 
     once: true, 
     amount: 0.1, 
-    margin: "-20%" 
+    margin: "-10%" 
   })
 
   return (

@@ -9,7 +9,11 @@ import { Github, Linkedin, Mail } from "lucide-react"
 
 export default function ContactSection() {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const isInView = useInView(ref, { 
+    once: true, 
+    amount: 0.1, 
+    margin: "-10%" 
+  })
 
   return (
     <section id="contact" className="py-20 md:py-32 bg-gradient-to-b from-background to-purple-950/20">
