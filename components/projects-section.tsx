@@ -69,7 +69,11 @@ export default function ProjectsSection() {
 
 function SectionHeader({ title, subtitle }: { title: string; subtitle: string }) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const isInView = useInView(ref, { 
+    once: true, 
+    amount: 0.1, 
+    margin: "-20%" 
+  })
 
   return (
     <motion.div
@@ -93,7 +97,11 @@ function ProjectCard({
   isEven: boolean
 }) {
   const ref = useRef(null)
-  const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const isInView = useInView(ref, { 
+    once: true, 
+    amount: 0.1, 
+    margin: "-20%" 
+  })
 
   return (
     <motion.div
@@ -117,7 +125,7 @@ function ProjectCard({
               className="w-full h-auto"
               style={{ width: 800, height: 600 }}
             >
-              <source src="FTA.mp4" type="video/mp4" />
+              <source src="/FTA.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           ) : (
