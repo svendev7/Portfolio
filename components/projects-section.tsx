@@ -33,7 +33,7 @@ const projects = [
     title: "PebblyPal",
     description:
       "An IOS app for counting calories and tracking meals and weight, a project im currently still developing",
-    image: "/pEbbly.png?height=600&width=800",
+    image: "/Pebbly.png?height=600&width=800",
     tags: ["React Native", "Expo", "XCode", "Unity", "Typescript", "Firebase"],
     liveLink: "https://github.com/svendev7/CuteCalorieTrackingApp.git",
     githubLink: "https://github.com/svendev7/CuteCalorieTrackingApp.git",
@@ -47,8 +47,8 @@ const projects = [
     tags: ["Unity", "C#", "Photoshop (for the pixel art)", "Steam"],
     liveLink: "https://github.com/svendev7/FarmingTheApocalypse.git",
     githubLink: "https://github.com/svendev7/FarmingTheApocalypse.git",
+    video: "/FTA.mp4" 
   },
-  
 ]
 
 export default function ProjectsSection() {
@@ -109,13 +109,26 @@ function ProjectCard({
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.3 }}
         >
-          <Image
-            src={project.image || "/placeholder.svg"}
-            alt={project.title}
-            width={800}
-            height={600}
-            className="w-full h-auto"
-          />
+          {project.title === "Farming The Apocalypse" ? (
+            <video 
+              autoPlay
+              muted
+              loop
+              className="w-full h-auto"
+              style={{ width: 800, height: 600 }}
+            >
+              <source src="FTA.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          ) : (
+            <Image
+              src={project.image || "/placeholder.svg"}
+              alt={project.title}
+              width={800}
+              height={600}
+              className="w-full h-auto"
+            />
+          )}
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
             <div className="p-6 w-full">
               <div className="flex flex-wrap gap-2 mb-4">

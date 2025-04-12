@@ -41,17 +41,18 @@ export default function Footer() {
             <Link href="/" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
               Home
             </Link>
-            <Link href="/about" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
+            <Link 
+              href="/about" 
+              className="text-sm text-foreground/60 hover:text-foreground transition-colors"
+              onClick={(e) => {
+                e.preventDefault()
+                window.location.hash = 'about'
+                window.scrollTo(0, 0)
+              }}
+            >
               About
             </Link>
-            <Link href="#projects" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-              Projects
-            </Link>
-            <Link href="#contact" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-              Contact
-            </Link>
           </div>
-
           <motion.button
             onClick={scrollToTop}
             className="mt-6 md:mt-0 w-10 h-10 rounded-full bg-purple-500/10 flex items-center justify-center text-purple-400 hover:bg-purple-500/20 transition-colors"
