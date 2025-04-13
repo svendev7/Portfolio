@@ -30,7 +30,7 @@ export const en = {
     description: "Have a question or want to work together? Feel free to reach out!",
     connect: "Let's Connect",
     available: "Available for Work",
-    availableDescription: "I'm currently open to new opportunities and would love to hear from you.",
+    availableDescription: "I'm currently available for work. If you have a job or project in mind or just want to chat, feel free to reach out!",
     name: "Name",
     email: "Email",
     message: "Message",

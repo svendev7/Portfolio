@@ -30,7 +30,7 @@ export const nl = {
     description: "Heb je een vraag of wil je samenwerken? Neem gerust contact op!",
     connect: "Laten we Verbinden",
     available: "Beschikbaar voor Werk",
-    availableDescription: "Ik sta open voor nieuwe kansen en hoor graag van je.",
+    availableDescription: "Ik ben momenteel beschikbaar voor werk. Heb je een klus of project in gedachten of wil je gewoon even kletsen? Neem dan gerust contact met me op!",
     name: "Naam",
     email: "E-mail",
     message: "Bericht",
