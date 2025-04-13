@@ -141,31 +141,6 @@ function ProjectCard({
               Your browser does not support the video tag.
             </video>
           )}
-
-          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-          <div className="absolute bottom-0 p-6 w-full">
-            <div className="flex flex-wrap gap-2 mb-4">
-              {project.tags.map((tag) => (
-                <span key={tag} className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">
-                  {tag}
-                </span>
-              ))}
-            </div>
-            <div className="flex gap-3">
-              <Button asChild size="sm" className="bg-white text-black hover:bg-white/90">
-                <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="w-4 h-4 mr-2" />
-                  {t.projects.liveDemo}
-                </a>
-              </Button>
-              <Button asChild size="sm" variant="outline" className="border-white text-white hover:bg-white/10">
-                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                  <Github className="w-4 h-4 mr-2" />
-                  {t.projects.viewCode}
-                </a>
-              </Button>
-            </div>
-          </div>
         </motion.div>
       </div>
 
