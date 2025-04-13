@@ -79,7 +79,7 @@ export const en = {
           title: "Internship Test Engineer",
           company: "Kadaster",
           location: "Apeldoorn, Netherlands",
-          period: "2025, Feb - Present",
+          period: "Feb, 2025 - Present",
           description: "Researching implementation of automated tests within the KLIC-viewer of Kadaster",
           skills: ["Robot Framework", "SikuliX", "WinAppDriver", "AutoIt", "Github"]
         },
@@ -88,7 +88,7 @@ export const en = {
           title: "Bike Courier",
           company: "Just Eat Takeaway",
           location: "Utrecht, Netherlands",
-          period: "2023, Okt - 2025, January",
+          period: "Okt, 2023 - Jan, 2025",
           description: "Delivering food via Bike in my home City of utrecht, i loved this job as the alone time cycling allowed me to listen to podcasts and music, the weather wasn't always great, but i got paid for free exercise!",
           skills: []
         },
@@ -97,7 +97,7 @@ export const en = {
           title: "Supermarket Truck Loader/Offloader",
           company: "Ahold Delhaize",
           location: "Utrecht, Netherlands",
-          period: "2021, Juli - 2023, June",
+          period: "Jul, 2021 - Jun, 2023",
           description: "Worked to offload and load trucks with groceries, worked to sort the carts per aisle, i was young and this was my first part-time job during middle & high -school",
           skills: []
         }
