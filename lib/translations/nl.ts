@@ -64,7 +64,7 @@ export const nl = {
   },
   about: {
     title: "Over Mij",
-    description1: "Ik ben nog jong, maar heb al meer dan 4 jaar ervaring in het maken van mooie, functionele en gebruiksvriendelijke digitale ervaringen.",
+    description1: "Ik ben nog jong, maar heb al meer dan 2 jaar ervaring in het maken van mooie, functionele en gebruiksvriendelijke digitale ervaringen.",
     description2: "Zodra ik begon met programmeren, was ik direct enthousiast. Het spreekt me aan en ik hou van de uitdaging. Het is een steeds veranderend vakgebied, vooral met de opkomst van AI, maar ik zie dat niet als iets negatiefs. AI biedt voor mij veel geweldige kansen om mijn werk te versnellen saai werk te verminderen",
     description3: "Als ik niet werk, vind je me bijna elke dag in de sportschool (leuk feitje: ik kan 110KG bankdrukken!), met vrienden, aan persoonlijke projecten werken, studeren of gamen.",
     downloadCV: "Download CV",
