@@ -8,11 +8,14 @@ import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { usePathname } from "next/navigation"
+import LanguageSwitcher from "./language-switcher"
+import { useLanguage } from "@/lib/contexts/LanguageContext"
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
+  const { t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -45,46 +48,68 @@ export default function Header() {
 
         <nav className="hidden md:flex items-center space-x-6">
           <NavLink href="/" active={pathname === "/"}>
-            Home
+            {t.nav.home}
           </NavLink>
           <NavLink href="/about" active={pathname === "/about"}>
-            About
+            {t.nav.about}
           </NavLink>
+          <LanguageSwitcher />
           <Button
             asChild
             className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
           >
-            <a href="#contact">Contact Me</a>
+            <a href="#contact">{t.nav.contact}</a>
           </Button>
         </nav>
 
-        <button className="md:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+        <button 
+          className="md:hidden p-2 hover:bg-background/50 rounded-lg transition-colors" 
+          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        >
           {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
 
       {mobileMenuOpen && (
         <motion.div
-          className="md:hidden bg-background/95 backdrop-blur-md"
-          initial={{ opacity: 0, height: 0 }}
-          animate={{ opacity: 1, height: "auto" }}
-          exit={{ opacity: 0, height: 0 }}
-          transition={{ duration: 0.3 }}
+          className="md:hidden fixed inset-x-0 top-0 bg-background/95 backdrop-blur-md border-b border-border/50"
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0, y: -20 }}
+          transition={{ duration: 0.2 }}
         >
-          <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
-            <MobileNavLink href="/" active={pathname === "/"} onClick={() => setMobileMenuOpen(false)}>
-              Home
-            </MobileNavLink>
-            <MobileNavLink href="/about" active={pathname === "/about"} onClick={() => setMobileMenuOpen(false)}>
-              About
-            </MobileNavLink>
-            <Button
-              asChild
-              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 w-full"
-              onClick={() => setMobileMenuOpen(false)}
-            >
-              <a href="#contact">Contact Me</a>
-            </Button>
+          <div className="container mx-auto px-4 py-4">
+            <div className="flex justify-between items-center mb-6">
+              <Link href="/">
+                <span className="text-xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
+                  svenwritescode
+                </span>
+              </Link>
+              <button 
+                className="p-2 hover:bg-background/50 rounded-lg transition-colors" 
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <X size={24} />
+              </button>
+            </div>
+            <div className="flex flex-col space-y-4">
+              <MobileNavLink href="/" active={pathname === "/"} onClick={() => setMobileMenuOpen(false)}>
+                {t.nav.home}
+              </MobileNavLink>
+              <MobileNavLink href="/about" active={pathname === "/about"} onClick={() => setMobileMenuOpen(false)}>
+                {t.nav.about}
+              </MobileNavLink>
+              <div className="py-2">
+                <LanguageSwitcher />
+              </div>
+              <Button
+                asChild
+                className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 w-full"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <a href="#contact">{t.nav.contact}</a>
+              </Button>
+            </div>
           </div>
         </motion.div>
       )}
@@ -126,7 +151,11 @@ function MobileNavLink({
   return (
     <Link
       href={href}
-      className={`block py-2 text-lg font-medium ${active ? "text-foreground" : "text-foreground/60"}`}
+      className={`block py-2.5 px-4 text-lg font-medium rounded-lg transition-colors ${
+        active 
+          ? "bg-purple-500/10 text-purple-500" 
+          : "text-foreground/60 hover:text-foreground hover:bg-background/50"
+      }`}
       onClick={onClick}
     >
       {children}

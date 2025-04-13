@@ -5,8 +5,10 @@ import type React from "react"
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { Github, Linkedin, Mail, ArrowUp } from "lucide-react"
+import { useLanguage } from "@/lib/contexts/LanguageContext"
 
 export default function Footer() {
+  const { t } = useLanguage()
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
@@ -22,8 +24,7 @@ export default function Footer() {
               </span>
             </Link>
             <p className="mt-2 text-sm text-foreground/60 max-w-md">
-              Full-stack developer and Web Designer creating beautiful, functional, and user-centered digital
-              experiences.
+              {t.footer.description}
             </p>
           </div>
 
@@ -35,11 +36,13 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center">
-          <p className="text-sm text-foreground/60">© {new Date().getFullYear()} Sven Groot. All rights reserved.</p>
+          <p className="text-sm text-foreground/60">
+            © {new Date().getFullYear()} Sven Groot. {t.footer.rights}
+          </p>
 
           <div className="mt-4 md:mt-0 flex items-center space-x-6">
             <Link href="/" className="text-sm text-foreground/60 hover:text-foreground transition-colors">
-              Home
+              {t.nav.home}
             </Link>
             <Link 
               href="/about" 
@@ -50,7 +53,7 @@ export default function Footer() {
                 window.scrollTo(0, 0)
               }}
             >
-              About
+              {t.nav.about}
             </Link>
           </div>
           <motion.button

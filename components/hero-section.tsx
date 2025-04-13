@@ -4,8 +4,11 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ArrowDown } from "lucide-react"
+import { useLanguage } from "@/lib/contexts/LanguageContext"
 
 export default function HeroSection() {
+  const { t } = useLanguage()
+
   return (
     <section className="relative min-h-screen flex items-center pt-20">
       <div className="absolute inset-0 bg-gradient-to-b from-purple-500/10 to-background z-0" />
@@ -19,17 +22,16 @@ export default function HeroSection() {
             className="order-2 lg:order-1"
           >
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-              Hi!, I'm{" "}
+              {t.hero.title}{" "}
               <span className="bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">
                 Sven Groot
               </span>
             </h1>
             <h2 className="text-2xl md:text-3xl font-medium text-foreground/80 mb-6">
-              Full-Stack Developer & Web Designer
+              {t.hero.subtitle}
             </h2>
             <p className="text-lg text-foreground/70 mb-8 max-w-lg">
-              I create beautiful, functional, and user-centered digital experiences. With a passion for both design and
-              development, I try to bring a unique perspective to every project.
+              {t.hero.description}
             </p>
             <div className="flex flex-wrap gap-4">
               <Button
@@ -37,10 +39,10 @@ export default function HeroSection() {
                 size="lg"
                 className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
               >
-                <a href="#projects">View My Work</a>
+                <a href="#projects">{t.projects.viewProject}</a>
               </Button>
               <Button asChild size="lg" variant="outline">
-                <a href="/about">About Me</a>
+                <a href="/about">{t.about.title}</a>
               </Button>
             </div>
           </motion.div>

@@ -3,10 +3,9 @@ import { Inter } from "next/font/google"
 import "./globals.css"
 import Header from "@/components/header"
 import { ThemeProvider } from "@/components/theme-provider"
+import { LanguageProvider } from "@/lib/contexts/LanguageContext"
 
 const inter = Inter({ subsets: ["latin"] })
-
-
 
 export default function RootLayout({
   children,
@@ -14,16 +13,17 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
+    <html suppressHydrationWarning>
+      <body className={inter.className} suppressHydrationWarning>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
-          <Header />
-          {children}
+          <LanguageProvider>
+            <Header />
+            {children}
+          </LanguageProvider>
         </ThemeProvider>
       </body>
     </html>
   )
 }
-
 
 import './globals.css'

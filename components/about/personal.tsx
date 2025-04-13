@@ -7,6 +7,7 @@ import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { Download } from "lucide-react"
+import { useLanguage } from "@/lib/contexts/LanguageContext"
 
 const skills = [
   "JavaScript",
@@ -33,6 +34,7 @@ const skills = [
 export default function Personal() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const { t } = useLanguage()
 
   return (
     <div className="space-y-8">
@@ -49,21 +51,18 @@ export default function Personal() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-bold mb-3">About Me</h2>
             <p className="text-foreground/80 mb-4">
-              I'm still young, but i have over 4 years of experience creating
-              beautiful, functional, and user-centered digital experiences.
+              {t.about.description1}
             </p>
             <p className="text-foreground/80 mb-4">
-              As soon as i started coding, i instantly fell in love, it scratches my brain in the right way and i love the challenge.
-              Its an ever changing field, especially with the rise of AI, but i don't see that as a bad thing, AI for me has many great opportunities to speed up and help with tedious work.
-              </p>
+              {t.about.description2}
+            </p>
             <p className="text-foreground/80 mb-4">
-              When I'm not working, you can find me in the gym almost every day(little fun fact: i can bench press 110KG!), spending time with friends, working on personal projects, studying, or playing video games. 
+              {t.about.description3}
             </p>
             <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600">
               <Download className="w-4 h-4 mr-2" />
-              Download CV
+              {t.about.downloadCV}
             </Button>
           </div>
         </div>
@@ -78,6 +77,7 @@ export default function Personal() {
 function SkillsSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, amount: 0.3 })
+  const { t } = useLanguage()
 
   return (
     <motion.div
@@ -87,7 +87,7 @@ function SkillsSection() {
       transition={{ duration: 0.7, delay: 0.2 }}
       className="bg-card rounded-xl p-6 shadow-lg"
     >
-      <h2 className="text-2xl font-bold mb-4">Skills & Expertise</h2>
+      <h2 className="text-2xl font-bold mb-4">{t.about.skills.title}</h2>
 
       <div className="flex flex-wrap gap-2">
         {skills.map((skill) => (
@@ -112,21 +112,7 @@ function EducationSection() {
     amount: 0.1, 
     margin: "-5%" 
   })
-
-  const education = [
-    {
-      degree: "HBO-ICT in Software Development",
-      institution: "Hogeschool utrecht",
-      period: "2022 - 2026",
-      description: "HBO degree in Information and Communication Technology, specializing in Software Development. This program focuses on the design, development, management and deployment of software systems.",
-    },
-    {
-      degree: "HAVO diploma",
-      institution: "Minkema College",
-      period: "2017 - 2022",
-      description: "(Senior General Secondary Education) Equivalent to upper secondary education, emphasizing theoretical and applied learning, with eligibility for higher professional education.",
-    },
-  ]
+  const { t } = useLanguage()
 
   return (
     <motion.div
@@ -136,10 +122,10 @@ function EducationSection() {
       transition={{ duration: 0.7, delay: 0.4 }}
       className="bg-card rounded-xl p-6 shadow-lg"
     >
-      <h2 className="text-2xl font-bold mb-4">Education</h2>
+      <h2 className="text-2xl font-bold mb-4">{t.about.education.title}</h2>
 
       <div className="space-y-6">
-        {education.map((item, index) => (
+        {t.about.education.items.map((item, index) => (
           <div key={index} className="border-l-2 border-purple-500/30 pl-4">
             <h3 className="text-lg font-semibold">{item.degree}</h3>
             <p className="text-foreground/70">

@@ -6,10 +6,11 @@ import { useInView } from "framer-motion"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { ExternalLink, Github } from "lucide-react"
+import { useLanguage } from "@/lib/contexts/LanguageContext"
 
 const projects = [
   {
-    id: 1,
+    id: "remembr",
     title: "Remembr Site",
     description:
       "A social media platform where people share about deceased loved ones and can arrange memorial dates or send condoleances, this project was a team project commisioned by the owner to the Hogeschool Utrecht and chosen by our team to work on, we were to update the existing design (Which was ~15 years old)",
@@ -19,7 +20,7 @@ const projects = [
     githubLink: "https://github.com/Remembr-Dev/remembr-front-end.git",
   },
   {
-    id: 2,
+    id: "grootsdesign",
     title: "Groots Design Site",
     description:
       "A custom React site commisioned for GrootsDesign an Interior Design company, with a focus on showcasing their work and services.",
@@ -29,7 +30,7 @@ const projects = [
     githubLink: "https://github.com/svendev7/GrootsDesignWebsite",
   },
   {
-    id: 3,
+    id: "pebblypal",
     title: "PebblyPal",
     description:
       "An IOS app for counting calories and tracking meals and weight, a project im currently still developing",
@@ -39,7 +40,7 @@ const projects = [
     githubLink: "https://github.com/svendev7/CuteCalorieTrackingApp.git",
   },
   {
-    id: 4,
+    id: "farmingApocalypse",
     title: "Farming The Apocalypse",
     description:
       "A pixel art pc game im developing in my free time, its a similar-ish game to stardew valley, but with a focus on farming and building in a post apocalyptic world where your main focus lies in base defence, this is a large project and won't be done in the near future.",
@@ -52,10 +53,12 @@ const projects = [
 ]
 
 export default function ProjectsSection() {
+  const { t } = useLanguage()
+  
   return (
     <section id="projects" className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
-        <SectionHeader title="My Projects" subtitle="Check out some of my recent work" />
+        <SectionHeader title={t.projects.title} subtitle={t.projects.subtitle} />
 
         <div className="mt-16 space-y-32">
           {projects.map((project, index) => (
@@ -102,6 +105,7 @@ function ProjectCard({
     amount: 0.1, 
     margin: "-10%" 
   })
+  const { t } = useLanguage()
 
   return (
     <motion.div
@@ -117,7 +121,6 @@ function ProjectCard({
           whileHover={{ scale: 1.03 }}
           transition={{ duration: 0.3 }}
         >
-      
           <Image
             src={project.image || "/placeholder.svg"}
             alt={project.title}
@@ -139,29 +142,28 @@ function ProjectCard({
             </video>
           )}
 
-          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 hover:opacity-100 transition-opacity duration-300 flex items-end">
-            <div className="p-6 w-full">
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tags.map((tag) => (
-                  <span key={tag} className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">
-                    {tag}
-                  </span>
-                ))}
-              </div>
-              <div className="flex gap-3">
-                <Button asChild size="sm" className="bg-white text-black hover:bg-white/90">
-                  <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Live Demo
-                  </a>
-                </Button>
-                <Button asChild size="sm" variant="outline" className="border-white text-white hover:bg-white/10">
-                  <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
-                    <Github className="w-4 h-4 mr-2" />
-                    Code
-                  </a>
-                </Button>
-              </div>
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+          <div className="absolute bottom-0 p-6 w-full">
+            <div className="flex flex-wrap gap-2 mb-4">
+              {project.tags.map((tag) => (
+                <span key={tag} className="px-3 py-1 bg-purple-500/20 text-purple-300 rounded-full text-sm">
+                  {tag}
+                </span>
+              ))}
+            </div>
+            <div className="flex gap-3">
+              <Button asChild size="sm" className="bg-white text-black hover:bg-white/90">
+                <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="w-4 h-4 mr-2" />
+                  {t.projects.liveDemo}
+                </a>
+              </Button>
+              <Button asChild size="sm" variant="outline" className="border-white text-white hover:bg-white/10">
+                <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                  <Github className="w-4 h-4 mr-2" />
+                  {t.projects.viewCode}
+                </a>
+              </Button>
             </div>
           </div>
         </motion.div>
@@ -169,7 +171,7 @@ function ProjectCard({
 
       <div className={`${isEven ? "lg:order-1" : "lg:order-2"}`}>
         <h3 className="text-2xl md:text-3xl font-bold mb-4">{project.title}</h3>
-        <p className="text-lg text-foreground/70 mb-6">{project.description}</p>
+        <p className="text-lg text-foreground/70 mb-6">{t.projects.descriptions[project.id]}</p>
         <div className="flex flex-wrap gap-2 mb-6">
           {project.tags.map((tag) => (
             <span key={tag} className="px-3 py-1 bg-purple-500/10 text-purple-400 rounded-full text-sm">
@@ -184,13 +186,13 @@ function ProjectCard({
           >
             <a href={project.liveLink} target="_blank" rel="noopener noreferrer">
               <ExternalLink className="w-4 h-4 mr-2" />
-              Live Demo
+              {t.projects.liveDemo}
             </a>
           </Button>
           <Button asChild variant="outline">
             <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
               <Github className="w-4 h-4 mr-2" />
-              View Code
+              {t.projects.viewCode}
             </a>
           </Button>
         </div>
