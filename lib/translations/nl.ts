@@ -19,10 +19,10 @@ export const nl = {
     liveDemo: "Live Demo",
     viewCode: "Bekijk Code",
     descriptions: {
-      remembr: "Een social media platform waar mensen herinneringen delen over overleden dierbaren en herdenkingsdata kunnen organiseren of condoleances kunnen sturen. Dit project was een teamproject in opdracht van de Hogeschool Utrecht en gekozen door ons team. We hebben het bestaande ontwerp (dat ongeveer 15 jaar oud was) gemoderniseerd.",
+      remembr: "Een social media platform waar mensen herinneringen delen over overleden dierbaren. Dit project was een teamproject in opdracht van de Hogeschool Utrecht en gekozen door ons team. We hebben het bestaande ontwerp (dat ongeveer 15 jaar oud was) gemoderniseerd.",
       grootsdesign: "Een op maat gemaakte React site voor GrootsDesign, een interieurontwerpbureau, gericht op het presenteren van hun werk en diensten.",
       pebblypal: "Een iOS app voor het bijhouden van calorieën en het tracken van maaltijden en gewicht, een project waar ik momenteel aan werk.",
-      farmingApocalypse: "Een pixel art pc-spel dat ik in mijn vrije tijd ontwikkel. Dit is een groot project wat ook nog lang niet klaar zal zijn, en dat vind ik prima, het is een hobby."
+      farmingApocalypse: "Een pixel art pc-spel die ik in mijn vrije tijd ontwikkel."
     }
   },
   contact: {
@@ -64,7 +64,7 @@ export const nl = {
   },
   about: {
     title: "Over Mij",
-    description1: "Ik ben nog jong, maar heb al meer dan 2 jaar ervaring in het maken van mooie, functionele en gebruiksvriendelijke digitale ervaringen.",
+    description1: "Ik ben 19, Met meer dan 2 jaar ervaring in het maken van mooie, functionele en gebruiksvriendelijke digitale ervaringen.",
     description2: "Zodra ik begon met programmeren, was ik direct enthousiast. Het spreekt me aan en ik hou van de uitdaging. Het is een steeds veranderend vakgebied, vooral met de opkomst van AI, maar ik zie dat niet als iets negatiefs. AI biedt voor mij veel geweldige kansen om mijn werk te versnellen saai werk te verminderen",
     description3: "Als ik niet werk, vind je me bijna elke dag in de sportschool (leuk feitje: ik kan 110KG bankdrukken!), met vrienden, aan persoonlijke projecten werken, studeren of gamen.",
     downloadCV: "Download CV",
@@ -88,7 +88,7 @@ export const nl = {
           title: "Fietskoerier",
           company: "Just Eat Takeaway",
           location: "Utrecht, Nederland",
-          period: "2023, Okt - 2025, Januari",
+          period: "Okt, 2023 - Januari, 2025"
           description: "Bezorgen van eten per fiets in mijn thuisstad Utrecht. Ik hield van deze baan omdat de alleen-tijd op de fiets me de kans gaf om naar podcasts en muziek te luisteren. Het weer was niet altijd geweldig, maar ik kreeg betaald voor gratis beweging!",
           skills: []
         },
