@@ -19,7 +19,7 @@ export const en = {
     liveDemo: "Live Demo",
     viewCode: "View Code",
     descriptions: {
-      remembr: "A social media platform where people share about deceased loved ones and can arrange memorial dates or send condoleances, this project was a team project commisioned by the owner to the Hogeschool Utrecht and chosen by our team to work on, we were to update the existing design (Which was ~15 years old)",
+      remembr: "A social media platform where people share about deceased loved ones, this project was a team project commisioned by the owner to the Hogeschool Utrecht and chosen by our team to work on, we were to update the existing design (Which was ~15 years old)",
       grootsdesign: "A custom React site commisioned for GrootsDesign an Interior Design company, with a focus on showcasing their work and services.",
       pebblypal: "An IOS app for counting calories and tracking meals and weight, a project im currently still developing",
       farmingApocalypse: "A pixel art pc game im developing in my free time, its a similar-ish game to stardew valley, but with a focus on farming and building in a post apocalyptic world where your main focus lies in base defence, this is a large project and won't be done in the near future."
@@ -64,7 +64,7 @@ export const en = {
   },
   about: {
     title: "About Me",
-    description1: "I'm still young, but i have over 2 years of experience creating beautiful, functional, and user-centered digital experiences.",
+    description1: "I'm 19, With over 2 years of experience creating beautiful, functional, and user-centered digital experiences.",
     description2: "As soon as i started coding, i instantly fell in love, it scratches my brain in the right way and i love the challenge. Its an ever changing field, especially with the rise of AI, but i don't see that as a bad thing, AI for me has many great opportunities to speed up and help with tedious work.",
     description3: "When I'm not working, you can find me in the gym almost every day(little fun fact: i can bench press 110KG!), spending time with friends, working on personal projects, studying, or playing video games.",
     downloadCV: "Download CV",
