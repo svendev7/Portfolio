@@ -3,7 +3,7 @@
 import type React from "react"
 
 import Link from "next/link"
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
 import { Menu, X } from "lucide-react"
@@ -16,6 +16,7 @@ export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const pathname = usePathname()
   const { t } = useLanguage()
+  const mobileMenuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,6 +26,19 @@ export default function Header() {
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (mobileMenuOpen && mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setMobileMenuOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [mobileMenuOpen])
 
   return (
     <header
@@ -72,6 +86,7 @@ export default function Header() {
 
       {mobileMenuOpen && (
         <motion.div
+          ref={mobileMenuRef}
           className="md:hidden fixed inset-x-0 top-0 bg-background/95 backdrop-blur-md border-b border-border/50"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
