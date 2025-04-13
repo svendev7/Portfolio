@@ -79,7 +79,7 @@ export const nl = {
           title: "Stage Test Engineer",
           company: "Kadaster",
           location: "Apeldoorn, Nederland",
-          period: "2025, Feb - Heden",
+          period: "Feb, 2025 - Heden",
           description: "Onderzoek naar implementatie van geautomatiseerde tests binnen de KLIC-viewer van Kadaster",
           skills: ["Robot Framework", "SikuliX", "WinAppDriver", "AutoIt", "Github"]
         },
@@ -97,7 +97,7 @@ export const nl = {
           title: "Supermarkt Truck Lader/Losser",
           company: "Ahold Delhaize",
           location: "Utrecht, Nederland",
-          period: "2021, Juli - 2023, Juni",
+          period: "Juli, 2021 - Jun, 2023",
           description: "Werkte aan het laden en lossen van vrachtwagens met boodschappen, werkte aan het sorteren van de karren. Ik was jong en dit was mijn eerste bijbaan tijdens de middelbare school.",
           skills: []
         }
@@ -109,7 +109,7 @@ export const nl = {
         {
           degree: "HBO-ICT in Software Development",
           institution: "Hogeschool Utrecht",
-          period: "2022 - 2026",
+          period: "2022 - Heden",
           description: "HBO-opleiding in Informatie- en Communicatietechnologie, gespecialiseerd in Software Development. Dit programma richt zich op het ontwerpen, ontwikkelen, beheren en implementeren van softwaresystemen."
         },
         {
