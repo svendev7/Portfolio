@@ -19,9 +19,7 @@ export function LanguageProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguage] = useState<Language>('en');
 
   useEffect(() => {
-    // Get browser language
     const browserLang = navigator.language.split('-')[0];
-    // Set language to Dutch if browser language is Dutch, otherwise English
     setLanguage(browserLang === 'nl' ? 'nl' : 'en');
   }, []);
 

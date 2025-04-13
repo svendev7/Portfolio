@@ -47,7 +47,7 @@ export default function Personal() {
       >
         <div className="flex flex-col sm:flex-row gap-6 items-center sm:items-start">
           <div className="relative w-32 h-32 rounded-full overflow-hidden border-4 border-purple-500/30 flex-shrink-0">
-            <Image src="/placeholder.svg?height=128&width=128" alt="Sven Groot" fill className="object-cover" />
+            <Image src="/portrait.png?height=128&width=128" alt="Sven Groot" fill className="object-cover" />
           </div>
 
           <div>

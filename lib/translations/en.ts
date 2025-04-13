@@ -64,7 +64,7 @@ export const en = {
   },
   about: {
     title: "About Me",
-    description1: "I'm still young, but i have over 4 years of experience creating beautiful, functional, and user-centered digital experiences.",
+    description1: "I'm still young, but i have over 2 years of experience creating beautiful, functional, and user-centered digital experiences.",
     description2: "As soon as i started coding, i instantly fell in love, it scratches my brain in the right way and i love the challenge. Its an ever changing field, especially with the rise of AI, but i don't see that as a bad thing, AI for me has many great opportunities to speed up and help with tedious work.",
     description3: "When I'm not working, you can find me in the gym almost every day(little fun fact: i can bench press 110KG!), spending time with friends, working on personal projects, studying, or playing video games.",
     downloadCV: "Download CV",

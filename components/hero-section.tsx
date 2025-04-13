@@ -55,7 +55,7 @@ export default function HeroSection() {
           >
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-purple-500/30">
               <Image
-                src="/placeholder.svg?height=320&width=320"
+                src="/portrait.png"
                 alt="Sven Groot"
                 fill
                 className="object-cover"
