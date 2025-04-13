@@ -109,7 +109,7 @@ export const en = {
         {
           degree: "HBO-ICT in Software Development",
           institution: "Hogeschool utrecht",
-          period: "2022 - 2026",
+          period: "2022 - Present",
           description: "HBO degree in Information and Communication Technology, specializing in Software Development. This program focuses on the design, development, management and deployment of software systems."
         },
         {
