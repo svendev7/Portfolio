@@ -89,7 +89,7 @@ export const nl = {
           title: "Fietskoerier",
           company: "Just Eat Takeaway",
           location: "Utrecht, Nederland",
-          period: "Okt, 2023 - Januari, 2025"
+          period: "Okt, 2023 - Januari, 2025",
           description: "Bezorgen van eten per fiets in mijn thuisstad Utrecht. Ik hield van deze baan omdat de alleen-tijd op de fiets me de kans gaf om naar podcasts en muziek te luisteren. Het weer was niet altijd geweldig, maar ik kreeg betaald voor gratis beweging!",
           skills: []
         },
