@@ -79,8 +79,8 @@ export const en = {
           title: "Internship Test Engineer",
           company: "Kadaster",
           location: "Apeldoorn, Netherlands",
-          period: "Feb, 2025 - Present",
-          description: "Researching implementation of automated tests within the KLIC-viewer of Kadaster",
+          period: "Feb, 2025 - Juli, 2025",
+          description: "Researching implementation of automated tests within the KLIC-viewer of Kadaster (Succesfully completed)",
           skills: ["Robot Framework", "SikuliX", "WinAppDriver", "AutoIt", "Github"]
         },
         {
