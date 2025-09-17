@@ -55,7 +55,7 @@ const projects = [
     title: "Ricgraph",
     description:
       "",
-    image: "/Ricgraph.png",
+    image: "/ricgraph-sticker-1000x688.jpg?height=600&width=800",
     tags: ["Linux", "Python", "Shell", "Harvester"],
     liveLink: "https://github.com/UtrechtUniversity/ricgraph",
     githubLink: "https://github.com/UtrechtUniversity/ricgraph",
