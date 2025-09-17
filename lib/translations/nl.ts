@@ -22,7 +22,8 @@ export const nl = {
       remembr: "Een social media platform waar mensen herinneringen delen over overleden dierbaren. Dit project was een teamproject in opdracht van de Hogeschool Utrecht en gekozen door ons team. We hebben het bestaande ontwerp (dat ongeveer 15 jaar oud was) gemoderniseerd.",
       grootsdesign: "Een op maat gemaakte React site voor GrootsDesign, een interieurontwerpbureau, gericht op het presenteren van hun werk en diensten.",
       pebblypal: "Een iOS app voor het bijhouden van calorieën en het tracken van maaltijden en gewicht, een project waar ik momenteel aan werk.",
-      farmingApocalypse: "Een pixel art pc-spel die ik in mijn vrije tijd ontwikkel."
+      farmingApocalypse: "Een pixel art pc-spel die ik in mijn vrije tijd ontwikkel.",
+      ricgraph: "Een tool voor het verbinden van publicatie's bronnen, en organizaties in een graph database."
     }
   },
   contact: {
