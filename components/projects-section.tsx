@@ -50,6 +50,16 @@ const projects = [
     githubLink: "https://github.com/svendev7/FarmingTheApocalypse.git",
     video: "/FTA.mp4" 
   },
+  {
+    id: "ricgraph",
+    title: "Ricgraph",
+    description:
+      "",
+    image: "/Ricgraph.png",
+    tags: ["Linux", "Python", "Shell", "Harvester"],
+    liveLink: "https://github.com/UtrechtUniversity/ricgraph",
+    githubLink: "https://github.com/UtrechtUniversity/ricgraph",
+  },
 ]
 
 export default function ProjectsSection() {
