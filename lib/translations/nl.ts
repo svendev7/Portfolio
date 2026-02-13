@@ -1,8 +1,8 @@
 export const nl = {
   hero: {
     title: "Hi!, ik ben",
-    subtitle: "Full-Stack Developer & Web Designer",
-    description: "Ik creëer mooie, functionele en gebruiksvriendelijke digitale ervaringen. Met een passie voor zowel design als development breng ik een unieke kijk in elk project."
+    subtitle: "Full-Stack Developer",
+    description: "Ik creëer mooie, functionele en gebruiksvriendelijke software. Met een passie voor zowel design als development breng ik een unieke kijk in elk project."
   },
   nav: {
     home: "Home",
@@ -29,8 +29,8 @@ export const nl = {
   contact: {
     title: "Neem Contact Op",
     description: "Heb je een vraag of wil je samenwerken? Neem gerust contact op!",
-    connect: "Laten we Verbinden",
-    available: "Beschikbaar voor Werk",
+    connect: "Laten we verbinden",
+    available: "Beschikbaar voor werk",
     availableDescription: "Ik ben momenteel beschikbaar voor werk. Heb je een klus of project in gedachten of wil je gewoon even kletsen? Neem dan gerust contact met me op!",
     name: "Naam",
     email: "E-mail",
