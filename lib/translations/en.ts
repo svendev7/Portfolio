@@ -7,7 +7,7 @@ export const en = {
   nav: {
     home: "Home",
     about: "About",
-    contact: "Contact Me"
+    contact: "Contact"
   },
   projects: {
     title: "My Projects",
