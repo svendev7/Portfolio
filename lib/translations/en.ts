@@ -81,7 +81,7 @@ export const en = {
           company: "Iconize",
           location: "Driebergen-Rijsenburg, Netherlands",
           period: "Feb, 2026 - Juli, 2026",
-          description: "Design & develop a mobile app for Healthy Climate Solutions (a subsidiary of Iconize) to give customers an easy solution to configure, test and manage their connected climate monitors",
+          description: "Design & develop a cross-platform mobile app for Healthy Climate Solutions (a subsidiary of Iconize) to give customers an easy solution to configure, test and manage their connected climate monitors",
           skills: ["React Native", "Expo Go", "XCode", "Nativewind", "Typescript", "Figma"]
         },
         {
