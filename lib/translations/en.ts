@@ -64,7 +64,7 @@ export const en = {
     by: "by"
   },
   about: {
-    title: "About Me",
+    title: "About me",
     description1: "I'm 20 years old, With over 3 years of experience creating beautiful, functional, and user-centered digital experiences.",
     description2: "As soon as i started coding, i instantly fell in love, it scratches my brain in the right way and i love the challenge. Its an ever changing field, especially with the rise of AI, but i don't see that as a bad thing, AI for me has many great opportunities to speed up and help with tedious work.",
     description3: "When I'm not working, I like spending time with friends, working on personal projects, working out, studying, or playing video games.",
