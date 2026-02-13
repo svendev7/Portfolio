@@ -27,10 +27,10 @@ export const en = {
     }
   },
   contact: {
-    title: "Get in Touch",
+    title: "Get in touch",
     description: "Have a question or want to work together? Feel free to reach out!",
     connect: "Let's connect",
-    available: "Available forwork",
+    available: "Available for work",
     availableDescription: "I'm currently available for work. If you have a job or project in mind or just want to chat, feel free to reach out!",
     name: "Name",
     email: "Email",
