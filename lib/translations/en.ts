@@ -58,14 +58,14 @@ export const en = {
     }
   },
   footer: {
-    description: "Full-stack developer and Web Designer creating beautiful, functional, and user-centered digital experiences.",
+    description: "Full-stack developer creating beautiful, functional, and user-centered digital experiences.",
     rights: "All rights reserved",
     madeWith: "Made with",
     by: "by"
   },
   about: {
     title: "About Me",
-    description1: "I'm 19, With over 2 years of experience creating beautiful, functional, and user-centered digital experiences.",
+    description1: "I'm 20 years old, With over 3 years of experience creating beautiful, functional, and user-centered digital experiences.",
     description2: "As soon as i started coding, i instantly fell in love, it scratches my brain in the right way and i love the challenge. Its an ever changing field, especially with the rise of AI, but i don't see that as a bad thing, AI for me has many great opportunities to speed up and help with tedious work.",
     description3: "When I'm not working, I like spending time with friends, working on personal projects, working out, studying, or playing video games.",
     downloadCV: "Download CV",
@@ -77,24 +77,33 @@ export const en = {
       items: [
         {
           id: 1,
-          title: "Internship Test Engineer",
-          company: "Kadaster",
-          location: "Apeldoorn, Netherlands",
-          period: "Feb, 2025 - Juli, 2025",
-          description: "Researching implementation of automated tests within the KLIC-viewer of Kadaster (Succesfully completed)",
-          skills: ["Robot Framework", "SikuliX", "WinAppDriver", "AutoIt", "Github"]
+          title: "Intern Mobile App Developer",
+          company: "Iconize",
+          location: "Driebergen-Rijsenburg, Netherlands",
+          period: "Feb, 2026 - Juli, 2026",
+          description: "Design & develop a mobile app for Healthy Climate Solutions (a subsidiary of Iconize) to give customers an easy solution to configure, test and manage their connected climate monitors",
+          skills: ["React Native", "Expo Go", "XCode", "Nativewind", "Typescript", "Figma"]
         },
         {
           id: 2,
+          title: "Intern Test Engineer",
+          company: "Kadaster",
+          location: "Apeldoorn, Netherlands",
+          period: "Feb, 2025 - Juli, 2025",
+          description: "Researching implementation of automated tests within the KLIC-viewer of Kadaster",
+          skills: ["Robot Framework", "SikuliX", "WinAppDriver", "AutoIt"]
+        },
+        {
+          id: 3,
           title: "Bike Courier",
           company: "Just Eat Takeaway",
           location: "Utrecht, Netherlands",
           period: "Okt, 2023 - Jan, 2025",
-          description: "Delivering food via Bike in my home City of utrecht, i loved this job as the alone time cycling allowed me to listen to podcasts and music, the weather wasn't always great, but i got paid for free exercise!",
+          description: "Delivering food via bike in my home city of utrecht, i loved this job as the alone time cycling allowed me to listen to podcasts and music, the weather wasn't always great, but i got paid for free exercise!",
           skills: []
         },
         {
-          id: 3,
+          id: 4,
           title: "Supermarket Truck Loader/Offloader",
           company: "Ahold Delhaize",
           location: "Utrecht, Netherlands",
