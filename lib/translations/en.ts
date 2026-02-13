@@ -1,8 +1,8 @@
 export const en = {
   hero: {
     title: "Hi!, I'm",
-    subtitle: "Full-Stack Developer & Web Designer",
-    description: "I create beautiful, functional, and user-centered digital experiences. With a passion for both design and development, I try to bring a unique perspective to every project."
+    subtitle: "Full-Stack Developer",
+    description: "I create beautiful, functional, and user-centered software. With a passion for both design and development, I try to bring a unique perspective to every project."
   },
   nav: {
     home: "Home",
@@ -22,15 +22,15 @@ export const en = {
       remembr: "A social media platform where people share about deceased loved ones, this project was a team project commisioned by the owner to the Hogeschool Utrecht and chosen by our team to work on, we were to update the existing design (Which was ~15 years old)",
       grootsdesign: "A custom React site commisioned for GrootsDesign an Interior Design company, with a focus on showcasing their work and services.",
       pebblypal: "An IOS app for counting calories and tracking meals and weight, a project im currently still developing",
-      farmingApocalypse: "A pixel art pc game im developing in my free time, its a similar-ish game to stardew valley, but with a focus on farming and building in a post apocalyptic world where your main focus lies in base defence, this is a large project and won't be done in the near future.",
+      farmingApocalypse: "A pixel art pc game im developing in my free time",
       ricgraph: "A tool to find connections between publications articles and organizations in a graph database."
     }
   },
   contact: {
     title: "Get in Touch",
     description: "Have a question or want to work together? Feel free to reach out!",
-    connect: "Let's Connect",
-    available: "Available for Work",
+    connect: "Let's connect",
+    available: "Available forwork",
     availableDescription: "I'm currently available for work. If you have a job or project in mind or just want to chat, feel free to reach out!",
     name: "Name",
     email: "Email",
