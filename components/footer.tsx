@@ -47,9 +47,7 @@ export default function Footer() {
             <Link 
               href="/about" 
               className="text-sm text-foreground/60 hover:text-foreground transition-colors"
-              onClick={(e) => {
-                e.preventDefault()
-                window.location.hash = 'about'
+              onClick={() => {
                 window.scrollTo(0, 0)
               }}
             >
