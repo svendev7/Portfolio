@@ -58,7 +58,7 @@ export const nl = {
     }
   },
   footer: {
-    description: "Full-stack developer en Web Designer die mooie, functionele en gebruiksvriendelijke digitale ervaringen creëert.",
+    description: "Full-stack developer die mooie, functionele en gebruiksvriendelijke digitale ervaringen creëert.",
     rights: "Alle rechten voorbehouden",
     madeWith: "Gemaakt met",
     by: "door"
@@ -77,7 +77,16 @@ export const nl = {
       items: [
         {
           id: 1,
-          title: "Stage Test Engineer",
+          title: "Stagair Mobile App Developer",
+          company: "Iconize",
+          location: "Driebergen-Rijsenburg, Netherlands",
+          period: "Feb, 2026 - Juli, 2026",
+          description: "Ontwerpen en ontwikkelen van een mobiele app voor Healthy Climate Solutions (een dochteronderneming van Iconize) om klanten een eenvoudige oplossing te bieden voor het configureren, testen en beheren van hun verbonden klimaatmonitors",
+          skills: ["React Native", "Expo Go", "XCode", "Nativewind", "Typescript", "Figma"]
+        },
+        {
+          id: 2,
+          title: "Stagair Test Engineer",
           company: "Kadaster",
           location: "Apeldoorn, Nederland",
           period: "Feb, 2025 - Juli, 2025",
