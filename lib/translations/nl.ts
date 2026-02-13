@@ -27,7 +27,7 @@ export const nl = {
     }
   },
   contact: {
-    title: "Neem Contact Op",
+    title: "Neem contact op",
     description: "Heb je een vraag of wil je samenwerken? Neem gerust contact op!",
     connect: "Laten we verbinden",
     available: "Beschikbaar voor werk",
