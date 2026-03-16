@@ -30,8 +30,8 @@ export default function Footer() {
 
           <div className="flex space-x-4">
             <SocialLink href="https://github.com/svenwritescode" icon={<Github size={20} />} />
-            <SocialLink href="https://linkedin.com/in/svenwritescode" icon={<Linkedin size={20} />} />
-            <SocialLink href="mailto:hello@svenwritescode.com" icon={<Mail size={20} />} />
+            <SocialLink href="https://www.linkedin.com/in/sven-groot-85b7582bb/" icon={<Linkedin size={20} />} />
+            <SocialLink href="mailto:svengroot88@gmail.com" icon={<Mail size={20} />} />
           </div>
         </div>
 
