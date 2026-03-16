@@ -29,7 +29,7 @@ export default function Footer() {
           </div>
 
           <div className="flex space-x-4">
-            <SocialLink href="https://github.com/svenwritescode" icon={<Github size={20} />} />
+            <SocialLink href="https://github.com/svendev7" icon={<Github size={20} />} />
             <SocialLink href="https://www.linkedin.com/in/sven-groot-85b7582bb/" icon={<Linkedin size={20} />} />
             <SocialLink href="mailto:svengroot88@gmail.com" icon={<Mail size={20} />} />
           </div>
