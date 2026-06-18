@@ -61,9 +61,14 @@ export default function Personal() {
             <p className="text-foreground/80 mb-4">
               {t.about.description3}
             </p>
-            <Button className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600">
-              <Download className="w-4 h-4 mr-2" />
-              {t.about.downloadCV}
+            <Button
+              asChild
+              className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600"
+            >
+              <a href="/Sven%20Groot%20CV.pdf" download="CV Sven Groot.pdf">
+                <Download className="w-4 h-4 mr-2" />
+                {t.about.downloadCV}
+              </a>
             </Button>
           </div>
         </div>
